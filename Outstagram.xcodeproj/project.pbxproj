@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081339F329A534D500F078D9 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081339F229A534D500F078D9 /* FeedCell.swift */; };
 		081560B2299E425E0058FE86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081560B1299E425E0058FE86 /* AppDelegate.swift */; };
 		081560BB299E42610058FE86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081560BA299E42610058FE86 /* Assets.xcassets */; };
 		081560BE299E42610058FE86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081560BC299E42610058FE86 /* LaunchScreen.storyboard */; };
@@ -16,9 +17,11 @@
 		08D2366D299FE38E009333BA /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D23667299FE38D009333BA /* ImageSelectorController.swift */; };
 		08D2366E299FE38E009333BA /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D23668299FE38D009333BA /* NotificationsController.swift */; };
 		08D2366F299FE38E009333BA /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D23669299FE38D009333BA /* FeedController.swift */; };
+		2ECC19F3994CAF2ACD31603E /* Pods_Outstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E47DFC3D7AC79F8548314A /* Pods_Outstagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081339F229A534D500F078D9 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		081560AE299E425E0058FE86 /* Outstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		081560B1299E425E0058FE86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		081560BA299E42610058FE86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +33,9 @@
 		08D23667299FE38D009333BA /* ImageSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		08D23668299FE38D009333BA /* NotificationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		08D23669299FE38D009333BA /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		732E7F50F48F1293524297C9 /* Pods-Outstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outstagram.debug.xcconfig"; path = "Target Support Files/Pods-Outstagram/Pods-Outstagram.debug.xcconfig"; sourceTree = "<group>"; };
+		97E47DFC3D7AC79F8548314A /* Pods_Outstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Outstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E40C84FD5CDD13CFE5E5D2 /* Pods-Outstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outstagram.release.xcconfig"; path = "Target Support Files/Pods-Outstagram/Pods-Outstagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECC19F3994CAF2ACD31603E /* Pods_Outstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				081560B0299E425E0058FE86 /* Outstagram */,
 				081560AF299E425E0058FE86 /* Products */,
+				89EEEADB3F5BBD92AA3A3681 /* Pods */,
+				FE46B76F4B08700B118DA42F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,12 +72,12 @@
 			isa = PBXGroup;
 			children = (
 				081560B1299E425E0058FE86 /* AppDelegate.swift */,
-				08D23648299FE33E009333BA /* Controllers */,
 				08D23657299FE33F009333BA /* Models */,
+				08D23650299FE33E009333BA /* Views */,
+				08D23648299FE33E009333BA /* Controllers */,
+				08D23654299FE33E009333BA /* ViewModels */,
 				08D23656299FE33F009333BA /* Services */,
 				08D23655299FE33F009333BA /* Utilities */,
-				08D23654299FE33E009333BA /* ViewModels */,
-				08D23650299FE33E009333BA /* Views */,
 				081560C5299E46580058FE86 /* Files */,
 			);
 			path = Outstagram;
@@ -100,6 +109,7 @@
 		08D23650299FE33E009333BA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				081339F229A534D500F078D9 /* FeedCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +142,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		89EEEADB3F5BBD92AA3A3681 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				732E7F50F48F1293524297C9 /* Pods-Outstagram.debug.xcconfig */,
+				B3E40C84FD5CDD13CFE5E5D2 /* Pods-Outstagram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE46B76F4B08700B118DA42F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97E47DFC3D7AC79F8548314A /* Pods_Outstagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 081560C2299E42610058FE86 /* Build configuration list for PBXNativeTarget "Outstagram" */;
 			buildPhases = (
+				1747666CDD4F045DD466E90C /* [CP] Check Pods Manifest.lock */,
 				081560AA299E425E0058FE86 /* Sources */,
 				081560AB299E425E0058FE86 /* Frameworks */,
 				081560AC299E425E0058FE86 /* Resources */,
 				08D23645299FE195009333BA /* SwiftLint */,
+				AD047ED3D99E6954ECA87DE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +247,45 @@
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		1747666CDD4F045DD466E90C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Outstagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD047ED3D99E6954ECA87DE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Outstagram/Pods-Outstagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Outstagram/Pods-Outstagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Outstagram/Pods-Outstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -230,6 +298,7 @@
 				081560B2299E425E0058FE86 /* AppDelegate.swift in Sources */,
 				08D2366B299FE38E009333BA /* ProfileController.swift in Sources */,
 				08D2366C299FE38E009333BA /* SearchController.swift in Sources */,
+				081339F329A534D500F078D9 /* FeedCell.swift in Sources */,
 				08D2366D299FE38E009333BA /* ImageSelectorController.swift in Sources */,
 				08D2366F299FE38E009333BA /* FeedController.swift in Sources */,
 			);
@@ -365,6 +434,7 @@
 		};
 		081560C3299E42610058FE86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732E7F50F48F1293524297C9 /* Pods-Outstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -396,6 +466,7 @@
 		};
 		081560C4299E42610058FE86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E40C84FD5CDD13CFE5E5D2 /* Pods-Outstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
