@@ -9,6 +9,7 @@ import Foundation
 
 enum Constants {
     enum Symbols {
+        static let logo = "theatermasks.fill"
         static let likeUnselected = "heart"
         static let likeSelected = "heart.fill"
         static let comment = "bubble.left"
