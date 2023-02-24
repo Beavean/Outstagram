@@ -16,7 +16,7 @@ final class MainTabController: UITabBarController {
     }
 
     private let navigationItems: [NavigationItem] = [
-        NavigationItem(viewController: FeedController(collectionViewLayout: UICollectionViewLayout()),
+        NavigationItem(viewController: FeedController(collectionViewLayout: UICollectionViewFlowLayout()),
                        unselectedImage: UIImage(systemName: "house"),
                        selectedImage: UIImage(systemName: "house.fill")),
         NavigationItem(viewController: SearchController(),
@@ -39,17 +39,17 @@ final class MainTabController: UITabBarController {
     }
 
     private func configureViewControllers() {
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         let viewControllers = navigationItems.map { createNavigationController($0) }
         setViewControllers(viewControllers, animated: false)
-        tabBar.tintColor = .black
+        tabBar.tintColor = .label
     }
 
     private func createNavigationController(_ item: NavigationItem) -> UINavigationController {
         let navController = UINavigationController(rootViewController: item.viewController)
         navController.tabBarItem.image = item.unselectedImage
         navController.tabBarItem.selectedImage = item.selectedImage
-        navController.navigationBar.tintColor = .black
+        navController.navigationBar.tintColor = .label
         return navController
     }
 }
