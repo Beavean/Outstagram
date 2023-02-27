@@ -14,5 +14,6 @@ enum Constants {
         static let likeSelected = "heart.fill"
         static let comment = "bubble.left"
         static let send = "paperplane"
+        static let plusPhoto = "plus.viewfinder"
     }
 }
