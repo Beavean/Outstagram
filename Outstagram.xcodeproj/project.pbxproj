@@ -18,6 +18,7 @@
 		084D7C2D29A8D6CB0094CACF /* UIButton+AttributedTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D7C2C29A8D6CB0094CACF /* UIButton+AttributedTitle.swift */; };
 		084D7C2F29A8D7540094CACF /* UIViewController+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D7C2E29A8D7540094CACF /* UIViewController+Gradient.swift */; };
 		0857015929A568C800002DCD /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0857015829A568C800002DCD /* FeedCell.swift */; };
+		088BFD3E29AEA9CF0035940D /* AuthenticationViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BFD3D29AEA9CF0035940D /* AuthenticationViewModelImpl.swift */; };
 		08D2366A299FE38E009333BA /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D23664299FE38D009333BA /* MainTabController.swift */; };
 		08D2366B299FE38E009333BA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D23665299FE38D009333BA /* ProfileController.swift */; };
 		08D2366C299FE38E009333BA /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D23666299FE38D009333BA /* SearchController.swift */; };
@@ -41,6 +42,7 @@
 		084D7C2C29A8D6CB0094CACF /* UIButton+AttributedTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+AttributedTitle.swift"; sourceTree = "<group>"; };
 		084D7C2E29A8D7540094CACF /* UIViewController+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Gradient.swift"; sourceTree = "<group>"; };
 		0857015829A568C800002DCD /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		088BFD3D29AEA9CF0035940D /* AuthenticationViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModelImpl.swift; sourceTree = "<group>"; };
 		08D23664299FE38D009333BA /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		08D23665299FE38D009333BA /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		08D23666299FE38D009333BA /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		088BFD3C29AEA9C30035940D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				088BFD3D29AEA9CF0035940D /* AuthenticationViewModelImpl.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		08D23648299FE33E009333BA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		08D23654299FE33E009333BA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				088BFD3C29AEA9C30035940D /* Authentication */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -344,6 +355,7 @@
 				08D2366F299FE38E009333BA /* FeedController.swift in Sources */,
 				084D7C2929A8D4C80094CACF /* RegistrationController.swift in Sources */,
 				084D7C2D29A8D6CB0094CACF /* UIButton+AttributedTitle.swift in Sources */,
+				088BFD3E29AEA9CF0035940D /* AuthenticationViewModelImpl.swift in Sources */,
 				0857015929A568C800002DCD /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
